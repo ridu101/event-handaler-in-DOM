@@ -13,3 +13,10 @@ console.log('External File')
  function makeRed(){
     document.body.style.backgroundColor= 'red';
  }
+
+//  using id
+
+const makeGreen= document.getElementById('btn-green');
+makeGreen.onclick= function makeGreen(){
+    document.body.style.backgroundColor='green';
+}
