@@ -30,3 +30,14 @@ function makeBtnPurple(){
 }
 
 makePurple.onclick= makeBtnPurple;
+
+// eventListener with function name
+
+const makePink= document.getElementById('btn-make-pink').addEventListener('click', function makePink(){
+   document.body.style.backgroundColor='pink';
+})
+
+// eventListener Without function name
+const makeGold= document.getElementById('btn-make-gold').addEventListener('dblclick', function (){
+   document.body.style.backgroundColor='goldenrod';
+})
