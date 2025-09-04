@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom summary</title>
+</head>
+<body>
+
+    <h1>Name Adding Function</h1>
+
+    <input id="name-input" placeholder="Your name" type="text">
+    <button onclick="addName()" > Add name</button>
+    <!-- button 2 -->
+
+    <button>Add name 2</button>
+    <div id="name-container">
+
+    </div>
+
+
+    <script>
+        function addName(){
+            const nameInput= document.getElementById('name-input')
+            const newName= nameInput.value;
+
+            // parent
+            const nameContainer= document.getElementById('name-container');
+
+            // create p
+
+            const p= document.createElement('p');
+            p.innerText=newName;
+
+            // append the child
+            nameContainer.appendChild(p);
+            nameInput.value= '';
+            
+
+
+            
+        }
+    </script>
+    
+</body>
+</html>
